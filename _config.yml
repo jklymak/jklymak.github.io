@@ -10,7 +10,7 @@ title:            Uvic Ocean Physics
 tagline:          'documentation !'
 description:      ''
 #url:              http://web.uvic.ca/~jklymak
-baseurl:          '/'
+baseurl:          ''
 
 author:
   name:           'Jody Klymak'
