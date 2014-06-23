@@ -10,7 +10,7 @@ title:            Uvic Ocean Physics
 tagline:          'documentation !'
 description:      ''
 #url:              http://web.uvic.ca/~jklymak
-baseurl:          '/projtemplate'
+baseurl:          '/'
 
 author:
   name:           'Jody Klymak'
@@ -23,4 +23,4 @@ paginate_path: "blog/page:num"
 version:          2.0.0
 
 github:
-  repo:           https://github.com/jklymak/projtemplate
+  repo:           https://github.com/jklymak/jklymak.github.io
