@@ -52,7 +52,7 @@ Most libraries not included with [Anaconda](https://store.continuum.io/cshop/ana
 
 You may have to append `sudo`.
 
-My libraries are at [https://github.com/jklymak/pythonlib](), and I'll try to keep them up to date.  The way to clone these using git is to go to the directory above where you want to install the library and:
+My libraries are at [https://github.com/jklymak/pythonlib](https://github.com/jklymak/pythonlib), and I'll try to keep them up to date.  The way to clone these using git is to go to the directory above where you want to install the library and:
 
     cd ~/python
     git clone git://github.com/jklymak/pythonlib.git
@@ -72,7 +72,7 @@ I run [ipython notebook](http://ipython.org/notebook.html) for most of my analys
 
 I think ipython sets this up automatically.  If they don't lets update this documentation.  
 
-Then, you need to open [Firefox](www.mozilla.org/en-US/firefox/new/), to [http://localhost:9999/]() and your notebook will appear.  You can start entering python code and running it.  The result will be saved in `Notebookname.ipynb` in the directory you are working in (where you choose the `Notebookname`).  
+Then, you need to open [Firefox](www.mozilla.org/en-US/firefox/new/), to [http://localhost:9999/](http://localhost:9999/) and your notebook will appear.  You can start entering python code and running it.  The result will be saved in `Notebookname.ipynb` in the directory you are working in (where you choose the `Notebookname`).  
 
 
 
