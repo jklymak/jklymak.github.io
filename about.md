@@ -9,3 +9,6 @@ This is the software list page for the [Uvic Ocean Physics Group](http://web.uvi
 
 See [http://jklymak.github.io/projtemplate]() for the steps for setting up a page like [http://jklymak.github.io/projectname]().  For this page, its the same steps, but the source is the master of [https://github.com/jklymak/jklymak.github.io]()
 
+## Where do I keep it locally?
+
+[file://~/Dropbox/ProjectDocs/jklymak.github.io]()
