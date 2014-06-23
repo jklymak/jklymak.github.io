@@ -13,7 +13,7 @@ This is how this documentation was made.
     easy_install mkdocs
 
 #### To build docs
-    bkdocs build
+    mkdocs build
 
 [klymakweb]: http://web.uvic.ca/~jklymak
 [mkdocs]: http://www.mkdocs.org
