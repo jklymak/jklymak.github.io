@@ -11,4 +11,4 @@ See [http://jklymak.github.io/projtemplate]() for the steps for setting up a pag
 
 ## Where do I keep it locally?
 
-[file://~/Dropbox/ProjectDocs/jklymak.github.io]()
+[file:///Users/jklymak/Dropbox/ProjectDocs/jklymak.github.io]()
