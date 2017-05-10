@@ -23,7 +23,7 @@ You probably want to set up a github account.
 
     sudo gem install jekyll
 
-jekyll is the site generator for these webpages, and how we will serve the documentation for each project.  Github runs it automatically if you follow the directions at [http://jklymak.github.io/projtemplate]().  However, if you want to preview the webpage locally before committing and pushing it, then you can run 
+jekyll is the site generator for these webpages, and how we will serve the documentation for each project.  Github runs it automatically if you follow the directions at [http://jklymak.github.io/projtemplate]().  However, if you want to preview the webpage locally before committing and pushing it, then you can run
 
     jekyll serve --baseurl ''
 
@@ -64,24 +64,11 @@ To make sure python sees this, modify the `PYTHONPATH` by adding the following t
     PYTHONPATH="/Users/yourlogin/python/pythonlib/:${PYTHONPATH}"
     export PYTHONPATH
 
-### [ipython notebook](http://ipython.org/notebook.html)
+### [jupyter notebook](http://jupyter.org)
 
-I run [ipython notebook](http://ipython.org/notebook.html) for most of my analysis.  To get this running I  type:
+I run [jupyter notebook](http://jupyter.org) for most of my analysis.  To get this running I  type:
 
-    % ipython notebook --profile=nbserver &
+    % jupyter-notebook
 
-I think ipython sets this up automatically.  If they don't lets update this documentation.  
 
 Then, you need to open [Firefox](www.mozilla.org/en-US/firefox/new/), to [http://localhost:9999/](http://localhost:9999/) and your notebook will appear.  You can start entering python code and running it.  The result will be saved in `Notebookname.ipynb` in the directory you are working in (where you choose the `Notebookname`).  
-
-
-
-
-
-
-
-
-
-
-
-
