@@ -7,10 +7,6 @@ title: Home
 
 This is a list of useful software we may need.
 
-## [brew](http://brew.sh)
-
-If `brew` is not already on your computer, see Install Homebrew at [http://brew.sh]() and follow the prompts.  Brew is the *nix package manager for OS X, and it largely has what we want.
-
 ## [git](github.com)
 
 git is the version control system we use.  Some of our stuff is kept on [github](github.com), which is a public repository of our code.  See [http://jklymak.github.com]().
@@ -29,13 +25,19 @@ jekyll is the site generator for these webpages, and how we will serve the docum
 
 and you will be able to see it at [http://localhost:4000/]().  
 
+## [brew](http://brew.sh)
+
+If `brew` is not already on your computer, see Install Homebrew at [http://brew.sh]() and follow the prompts.  Brew is the unix package manager for OS X, and it largely has what we want.  However, note that a lot of things that I used to use brew for are now available by anaconda, and using one packaged manager is better than a lot.  
+
+
+
 ## Editors and Document Preparation:
 
-For general editing, I use [Sublime Text](http://www.sublimetext.com) or Emacs.  
+For general editing, I use [Atom](https://atom.io).  
 
 For formal document preparation, I keep a Latex files.  For OS X use [MacTeX](https://tug.org/mactex/) and it will install TexShop and BibDesk
 
-For [LaTeX](http://www.latex-project.org) I use [TexShop](http://pages.uoregon.edu/koch/texshop/), or [TexPad](https://www.texpadapp.com).  
+For [LaTeX](http://www.latex-project.org) I use [TexPad](https://www.texpadapp.com).  
 
 For my bibliographies, I use [bibtex](http://www.bibtex.org) and [Bibdesk](http://bibdesk.sourceforge.net).  
 
@@ -50,25 +52,30 @@ Most libraries not included with [Anaconda](https://store.continuum.io/cshop/ana
     conda update
     conda install newlib
 
-You may have to append `sudo`.
+Many cutting edge libraries are at [conda-forge](https://conda-forge.org/#about)
+So I do
 
-My libraries are at [https://github.com/jklymak/pythonlib](https://github.com/jklymak/pythonlib), and I'll try to keep them up to date.  The way to clone these using git is to go to the directory above where you want to install the library and:
+    conda config --add channels conda-forge
+    conda config --set channel_priority strict
 
-    cd ~/python
-    git clone git://github.com/jklymak/pythonlib.git
+to make sure it is included in the search paths for installs.
 
-This will install a directory `~/python/pythonlib`
+My usual minimal install is:
 
-To make sure python sees this, modify the `PYTHONPATH` by adding the following two lines to `~/.profile`:
+    conda install matplotlib scipy xarray dask netcdf4 seawater jupyter
 
-    PYTHONPATH="/Users/yourlogin/python/pythonlib/:${PYTHONPATH}"
-    export PYTHONPATH
 
 ### [jupyter notebook](http://jupyter.org)
 
-I run [jupyter notebook](http://jupyter.org) for most of my analysis.  To get this running I  type:
+I run [jupyter notebook](http://jupyter.org) for most of my analysis.  To get this running I type:
 
     % jupyter-notebook
 
 
 Then, you need to open [Firefox](www.mozilla.org/en-US/firefox/new/), to [http://localhost:9999/](http://localhost:9999/) and your notebook will appear.  You can start entering python code and running it.  The result will be saved in `Notebookname.ipynb` in the directory you are working in (where you choose the `Notebookname`).  
+
+You can enable some cool extensions for the notebook:
+
+     conda install -c conda-forge jupyter_contrib_nbextensions
+
+I particularly like `toc2` (table of contents) and `Snippets` (pre-filled cells).
