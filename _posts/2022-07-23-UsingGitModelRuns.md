@@ -51,5 +51,6 @@ os.system('git push origin main')
 os.system(f'git checkout -B {runname}')
 os.system(f'git push origin {runname}')
 os.system('git checkout main')
-
 ```
+
+This works quite well and gives a list of branches, one for each model run, and you can easily get back to where you started.  See <https://github.com/jklymak/ButeWinds/> for an example.
